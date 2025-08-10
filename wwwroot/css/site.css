@@ -1,0 +1,118 @@
+html {
+  font-size: 14px;
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+table {
+    width: 100%;
+    max-width: 98vw;
+    display: inline-block;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: auto;
+}
+
+.table-cliente {
+    font-size: 11px;
+}
+
+thead {
+    background-color: #007bff;
+    color: white;
+    text-align: left;
+}
+
+th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+    tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+
+    tbody tr:hover {
+        background-color: #e9e9e9;
+    }
+
+td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #007bff;
+}
+
+.ctd-interno {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.welcome-section {
+    position: relative;
+    min-height: calc(100vh - 56px - 50px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.welcome-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/images/crecimiento.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.welcome-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.bienvenida-description {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.bienvenida-description h1 {
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+
+.bienvenida-description p {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.img-crecimiento {
+    width: 100%;
+}

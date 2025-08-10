@@ -1,0 +1,89 @@
+﻿@model IEnumerable<SistemaPrestamos.Models.ReciboCobro>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MontoPagado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MontoCapital)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MontoInteres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SaldoActual)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MetodoPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NumeroTransaccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Notas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prestamo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaPago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MontoPagado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MontoCapital)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MontoInteres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaldoActual)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MetodoPago)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroTransaccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prestamo.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cliente.Apellido)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ReciboCobroId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ReciboCobroId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ReciboCobroId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
