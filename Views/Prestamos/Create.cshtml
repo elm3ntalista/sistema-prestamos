@@ -14,41 +14,46 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="ClienteId" class="control-label"></label>
-                <select asp-for="ClienteId" class ="form-control" asp-items="ViewBag.ClienteId"></select>
+                <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
             </div>
             <div class="form-group">
                 <label asp-for="MontoPrincipal" class="control-label"></label>
-                <input asp-for="MontoPrincipal" class="form-control" />
+                <input asp-for="MontoPrincipal" type="number" class="form-control" />
                 <span asp-validation-for="MontoPrincipal" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TasaInteresAnual" class="control-label"></label>
-                <input asp-for="TasaInteresAnual" class="form-control" />
+                <input asp-for="TasaInteresAnual" type="number" class="form-control" />
                 <span asp-validation-for="TasaInteresAnual" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="PlazoMeses" class="control-label"></label>
-                <input asp-for="PlazoMeses" class="form-control" />
+                <input asp-for="PlazoMeses" type="number" class="form-control" />
                 <span asp-validation-for="PlazoMeses" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FrecuenciaPago" class="control-label"></label>
-                <input asp-for="FrecuenciaPago" class="form-control" />
+                <select asp-for="FrecuenciaPago" class="form-control">
+                    <option value="">-- Seleccione un plazo --</option>
+                    <option value="Cedula">Semanal</option>
+                    <option value="Pasaporte">Quincenal</option>
+                    <option value="Licencia">Mensual</option>
+                </select>
                 <span asp-validation-for="FrecuenciaPago" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FechaInicio" class="control-label"></label>
-                <input asp-for="FechaInicio" class="form-control" />
+                <input asp-for="FechaInicio" type="date" class="form-control" />
                 <span asp-validation-for="FechaInicio" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FechaFinPrevista" class="control-label"></label>
-                <input asp-for="FechaFinPrevista" class="form-control" />
+                <input asp-for="FechaFinPrevista" type="date" class="form-control" />
                 <span asp-validation-for="FechaFinPrevista" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="TasaInteresMoraAnual" class="control-label"></label>
-                <input asp-for="TasaInteresMoraAnual" class="form-control" />
+                <input asp-for="TasaInteresMoraAnual" type="number" class="form-control" />
                 <span asp-validation-for="TasaInteresMoraAnual" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -60,12 +65,12 @@
             </div>
             <div class="form-group">
                 <label asp-for="SaldoPendiente" class="control-label"></label>
-                <input asp-for="SaldoPendiente" class="form-control" />
+                <input asp-for="SaldoPendiente" type="number" class="form-control" />
                 <span asp-validation-for="SaldoPendiente" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="FechaUltimoPago" class="control-label"></label>
-                <input asp-for="FechaUltimoPago" class="form-control" />
+                <input asp-for="FechaUltimoPago" type="date" class="form-control" />
                 <span asp-validation-for="FechaUltimoPago" class="text-danger"></span>
             </div>
             <div class="form-group">

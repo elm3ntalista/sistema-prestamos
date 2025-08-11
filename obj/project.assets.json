@@ -7596,23 +7596,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wande\\.nuget\\packages\\": {},
+    "C:\\Users\\Jeremi Araujo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\wande\\Downloads\\SistemaPrestamos\\SistemaPrestamos.csproj",
+      "projectUniqueName": "C:\\Users\\Jeremi Araujo\\source\\repos\\elm3ntalista\\sistema-prestamos\\SistemaPrestamos.csproj",
       "projectName": "SistemaPrestamos",
-      "projectPath": "C:\\Users\\wande\\Downloads\\SistemaPrestamos\\SistemaPrestamos.csproj",
-      "packagesPath": "C:\\Users\\wande\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\wande\\Downloads\\SistemaPrestamos\\obj\\",
+      "projectPath": "C:\\Users\\Jeremi Araujo\\source\\repos\\elm3ntalista\\sistema-prestamos\\SistemaPrestamos.csproj",
+      "packagesPath": "C:\\Users\\Jeremi Araujo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jeremi Araujo\\source\\repos\\elm3ntalista\\sistema-prestamos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\wande\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jeremi Araujo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7620,7 +7620,7 @@
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7683,7 +7683,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
