@@ -12,26 +12,26 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="sidebar">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Sistema Prestamos</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index" style="font-size:1.8em; color:black;font-weight:bold;">Sistema Prestamos<hr /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Inicio</a>
+                        <li class="opcion">
+                            <a asp-area="" asp-controller="Home" asp-action="Index">Inicio<br /><br /></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Clientes" asp-action="Index">Clientes</a>
+                        <li class="opcion">
+                            <a asp-area="" asp-controller="Clientes" asp-action="Index">Clientes<br /><br /></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Prestamos" asp-action="Index">Préstamos</a>
+                        <li class="opcion">
+                            <a asp-area="" asp-controller="Prestamos" asp-action="Index">Préstamos<br /><br /></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="RecibosCobro" asp-action="Index">Recibos de Cobro</a>
+                        <li class="opcion">
+                            <a asp-area="" asp-controller="RecibosCobro" asp-action="Index">Recibos de Cobro</a>
                         </li>
                     </ul>
                 </div>
@@ -56,3 +56,40 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
+<style>
+    .sidebar {
+        width: 260px;
+        background-color: lightblue;
+        color: white;
+        padding: 10px;
+        height: 100vh; /* ocupa toda la altura */
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .sidebar ul {
+         list-style-type: none;
+    }
+    .sidebar ul li a{
+                color: darkblue;
+                font-size: 1.5em;
+                text-decoration: none;
+    }
+
+    .nav-item {
+        color: white;
+        font-size: 1.3em;
+    }
+
+    .container {
+        margin-left: 260px;
+        padding: 20px;
+        flex-grow: 1;
+    }
+    hr {
+        border-color:lightblue;
+        width:1px;
+    }
+</style>

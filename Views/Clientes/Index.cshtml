@@ -4,10 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
-
+<h1>Control de clientes</h1>
+<br />
+<br />
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="crear" asp-action="Create">Create New</a>
 </p>
 <table class="table table-cliente">
     <thead>
@@ -111,3 +112,18 @@
 }
     </tbody>
 </table>
+<style>
+
+    .crear {
+        background-color: lightblue;
+        border-radius: 5px;
+        color: black;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+</style>
