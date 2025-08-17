@@ -1,14 +1,14 @@
 ﻿@model SistemaPrestamos.Models.Prestamo
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Eliminar";
 }
 
-<h1>Delete</h1>
+<h1>Eliminar</h1>
 
-<h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>Prestamo</h4>
+    <h3>¿Estás seguro de que deseas eliminar este Prestamo?</h3>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -88,6 +88,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="PrestamoId" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <a asp-action="Index">←Volver atras</a>
     </form>
 </div>
