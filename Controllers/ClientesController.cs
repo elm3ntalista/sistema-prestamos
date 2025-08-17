@@ -22,6 +22,10 @@ namespace SistemaPrestamos.Controllers
         // GET: Clientes
         public async Task<IActionResult> Index()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("Usuario")))
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View(await _context.Clientes.ToListAsync());
         }
 

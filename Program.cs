@@ -10,7 +10,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<SistemaPrestamosDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-
+builder.Services.AddSession();
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
@@ -25,10 +25,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession();
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Index}/{id?}");
 
 app.Run();

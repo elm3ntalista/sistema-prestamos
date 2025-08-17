@@ -22,6 +22,10 @@ namespace SistemaPrestamos.Controllers
         // GET: ReciboCobroes
         public async Task<IActionResult> Index()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("Usuario")))
+            {
+                return RedirectToAction("Index", "Login");
+            }
             var sistemaPrestamosDbContext = _context.RecibosCobro.Include(r => r.Cliente).Include(r => r.Prestamo);
             return View(await sistemaPrestamosDbContext.ToListAsync());
         }

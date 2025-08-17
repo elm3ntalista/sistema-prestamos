@@ -15,6 +15,10 @@ namespace SistemaPrestamos.Controllers
 
         public IActionResult Index()
         {
+            if (string.IsNullOrEmpty(HttpContext.Session.GetString("Usuario")))
+            {
+                return RedirectToAction("Index", "Login");
+            }
             return View();
         }
 
